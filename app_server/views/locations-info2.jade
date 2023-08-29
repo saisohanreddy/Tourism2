@@ -1,0 +1,85 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Golkonda Fort
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p Khair Complex, Ibrahim Bagh, Hyderabad
+          img(src='./images/golkonda.jpg',width=250,height=250) 
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday - Friday : 9:00am - 5:00pm
+              p Saturday and Sunday: 8:00am - 6:00pm
+              
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Famous For:
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Eight Gateways
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Majestic Halls
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Mounted Cannons
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.592847805159!2d78.39847787476452!3d17.383314102923283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb968ea6aea98f%3A0x6b76ecdfd65a335a!2sGolconda%20Fort!5e0!3m2!1sen!2sin!4v1693314685063!5m2!1sen!2sin" width="380" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new')     Add review
+              h2.panel-title Customer reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Ram
+                    small.reviewTimestamp  26 Oct 2011
+                  .col-xs-12
+                    p This place is good to time spend, and learn about our history.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Nandan
+                    small.reviewTimestamp  12 Dec 2010
+                  .col-xs-12
+                    p This historically significant place is one of my personal favourites. Among all my journeys to historic places, the one I took to this particular spot is truly unforgettable. It was a great experience to explore this ancient world. It was extremely awesome to roam around inside and outside the fort. I enjoyed each and every moment of that visit.
+    .col-xs-12.col-md-3
+      p.lead
+        | Golconda was the principal capital of the Qutub Shahi kings. The inner fort contains ruins of palaces, mosques and a hill top pavilion, which rises about 130 meters high and gives a bird's eye view of other buildings. Golconda fort is undoubtedly one of most magnificent fortress complexes in India.
+      p
+        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.

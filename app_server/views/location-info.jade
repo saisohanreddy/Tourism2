@@ -1,0 +1,87 @@
+extends layout
+
+block content
+  .row.page-header
+    .col-lg-12
+      h1 Charminar
+  .row
+    .col-xs-12.col-md-9
+      .row
+        .col-xs-12.col-sm-6
+          p.rating
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star
+            span.glyphicon.glyphicon-star-empty
+            span.glyphicon.glyphicon-star-empty
+          p Charminar Rd,char kaman,Ghansi Bazaar,Hyderabad
+          <img src='./images/HD-wallpaper-charminar-public.jpg' width=250 , height=250>
+          
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Opening hours
+            .panel-body
+              p Monday - Friday : 7:00am - 7:00pm
+              p Saturday - Sunday: 8:00am - 5:00pm
+              
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Popular for :
+            .panel-body
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Irani Chai
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Laad Bazaar
+              | &nbsp;
+              span.label.label-warning
+                span.glyphicon.glyphicon-ok
+                | &nbsp;Shadab Hotel
+              | &nbsp;
+        .col-xs-12.col-sm-6.location-map
+          .panel.panel-primary
+            .panel-heading
+              h2.panel-title Location map
+            .panel-body
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0449755675304!2d78.47208957476414!3d17.361568703549196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb978a6e1a939b%3A0xcb5a69e4aaf113fb!2sCharminar!5e0!3m2!1sen!2sin!4v1693314560737!5m2!1sen!2sin" width="380" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              
+      .row
+        .col-xs-12
+          .panel.panel-primary.review-panel
+            .panel-heading
+              a.btn.btn-default.pull-right(href='/location/review/new')     Add review
+              h2.panel-title Customer Reviews
+            .panel-body.review-container
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                    span.reviewAuthor Yogesh
+                    small.reviewTimestamp 21 Augesh 2023
+                  .col-xs-12
+                    p What a great place. I can't say enough good things about it.
+              .row
+                .review
+                  .well.well-sm.review-header
+                    span.rating
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star
+                      span.glyphicon.glyphicon-star-empty
+                      span.glyphicon.glyphicon-star-empty
+                    span.reviewAuthor Vijay
+                    small.reviewTimestamp 16 June 2023
+                  .col-xs-12
+                    p It was great. Chai is so tasty, crowd is full
+    .col-xs-12.col-md-3
+      p.lead
+        | Charminar is famous for its intricate architecture, which makes it one of the most recognized structures of India. The surrounding Laad Bazaar and the 400 years old mosque on the top floor of Charminar make it famous amongst locals as well as the tourists.
+      p
+        | If you've been and you like it - or if you don't - please leave a review to help other people just like you.
